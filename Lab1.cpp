@@ -10,7 +10,20 @@ int main()
     cin >> number;
     if (number == 1)
     {
-        //прямоугольник
+        double width, height;
+
+        cout << "Введите ширину прямоугольника: ";
+        cin >> width;
+        cout << "Введите высоту прямоугольника: ";
+        cin >> height;
+
+        double perimeter = 2 * (width + height);
+        double area = width * height;
+        double diagonalLength = sqrt(width * width + height * height);
+
+        cout << "Периметр прямоугольника: " << perimeter << endl;
+        cout << "Площадь прямоугольника: " << area << endl;
+        cout << "Длина диагонали прямоугольника: " << diagonalLength << endl;
     }
     else if (number == 2)
     {
@@ -26,7 +39,15 @@ int main()
         {
             cout << "\nПериметр треугольника равен " << st1 + st2 + st3 << endl;
             double p = (st1 + st2 + st3) / 2;
-            cout << "Площадь треугольника равна " << sqrt(p * (p - st1) * (p - st2) * (p - st3)) << endl; // "площадь по формуле Герона"
+<<<<<<< HEAD
+            cout << "Площадь треугольника равна " << sqrt(p * (p - st1) * (p - st2) * (p - st3)) << endl; // "площадь по формуле Герона."
+=======
+<<<<<<< HEAD
+            cout << "Площадь треугольника равна " << sqrt(p * (p - st1) * (p - st2) * (p - st3)) << endl; 
+=======
+            cout << "Площадь треугольника равна " << sqrt(p * (p - st1) * (p - st2) * (p - st3)) << endl; 
+>>>>>>> Eva
+>>>>>>> main
             if ((st1 == st2) or (st2 == st3) or (st1 == st3))
             {
                 cout << "Треугольник равнобедренный\n";
