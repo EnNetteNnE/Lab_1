@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -17,13 +18,20 @@ int main()
         cout << "Введите высоту прямоугольника: ";
         cin >> height;
 
-        double perimeter = 2 * (width + height);
-        double area = width * height;
-        double diagonalLength = sqrt(width * width + height * height);
+        if ((width > 0) and (height > 0))
+        {
+            double perimeter = 2 * (width + height);
+            double area = width * height;
+            double diagonalLength = sqrt(width * width + height * height);
 
-        cout << "Периметр прямоугольника: " << perimeter << endl;
-        cout << "Площадь прямоугольника: " << area << endl;
-        cout << "Длина диагонали прямоугольника: " << diagonalLength << endl;
+            cout << "Периметр прямоугольника: " << perimeter << endl;
+            cout << "Площадь прямоугольника: " << area << endl;
+            cout << "Длина диагонали прямоугольника: " << diagonalLength << endl;
+        }
+        else
+        {
+            cout << "Значения прямоугольника должны быть положительными " << endl;
+        }
     }
     else if (number == 2)
     {
